@@ -1,0 +1,198 @@
+1 reserved word, program
+1 ID, name = bubble
+2 reserved word, var
+2 reserved word, integer
+2 ID, name = i
+2 ,
+2 ID, name = j
+2 ,
+2 ID, name = num
+2 ;
+3 reserved word, array
+3 [
+3 INTC, val = 1
+3 ..
+3 INTC, val = 20
+3 ]
+3 reserved word, of
+3 reserved word, integer
+3 ID, name = a
+3 ;
+4 reserved word, procedure
+4 ID, name = q
+4 (
+4 reserved word, integer
+4 ID, name = num
+4 )
+4 ;
+5 reserved word, var
+5 reserved word, integer
+5 ID, name = i
+5 ,
+5 ID, name = j
+5 ,
+5 ID, name = k
+5 ;
+6 reserved word, integer
+6 ID, name = t
+6 ;
+7 reserved word, begin
+8 ID, name = i
+8 :=
+8 INTC, val = 1
+8 ;
+9 reserved word, while
+9 ID, name = i
+9 <
+9 ID, name = num
+9 reserved word, do
+10 ID, name = j
+10 :=
+10 ID, name = num
+10 -
+10 ID, name = i
+10 +
+10 INTC, val = 1
+10 ;
+11 ID, name = k
+11 :=
+11 INTC, val = 1
+11 ;
+12 reserved word, while
+12 ID, name = k
+12 <
+12 ID, name = j
+12 reserved word, do
+13 reserved word, if
+13 ID, name = a
+13 [
+13 ID, name = k
+13 +
+13 INTC, val = 1
+13 ]
+13 <
+13 ID, name = a
+13 [
+13 ID, name = k
+13 ]
+14 reserved word, then
+15 ID, name = t
+15 :=
+15 ID, name = a
+15 [
+15 ID, name = k
+15 ]
+15 ;
+16 ID, name = a
+16 [
+16 ID, name = k
+16 ]
+16 :=
+16 ID, name = a
+16 [
+16 ID, name = k
+16 +
+16 INTC, val = 1
+16 ]
+16 ;
+17 ID, name = a
+17 [
+17 ID, name = k
+17 +
+17 INTC, val = 1
+17 ]
+17 :=
+17 ID, name = t
+18 reserved word, else
+18 ID, name = temp
+18 :=
+18 INTC, val = 0
+19 reserved word, fi
+19 ;
+20 ID, name = k
+20 :=
+20 ID, name = k
+20 +
+20 INTC, val = 1
+21 reserved word, endwh
+21 ;
+22 ID, name = i
+22 :=
+22 ID, name = i
+22 +
+22 INTC, val = 1
+23 reserved word, endwh
+24 reserved word, end
+25 reserved word, begin
+26 reserved word, read
+26 (
+26 ID, name = num
+26 )
+26 ;
+27 ID, name = i
+27 :=
+27 INTC, val = 1
+27 ;
+28 reserved word, while
+28 ID, name = i
+28 <
+28 (
+28 ID, name = num
+28 +
+28 INTC, val = 1
+28 )
+28 reserved word, do
+29 reserved word, read
+29 (
+29 ID, name = j
+29 )
+29 ;
+30 ID, name = a
+30 [
+30 ID, name = i
+30 ]
+30 :=
+30 ID, name = j
+30 ;
+31 ID, name = i
+31 :=
+31 ID, name = i
+31 +
+31 INTC, val = 1
+32 reserved word, endwh
+32 ;
+33 ID, name = q
+33 (
+33 ID, name = num
+33 )
+33 ;
+34 ID, name = i
+34 :=
+34 INTC, val = 1
+34 ;
+35 reserved word, while
+35 ID, name = i
+35 <
+35 (
+35 ID, name = num
+35 +
+35 INTC, val = 1
+35 )
+35 reserved word, do
+36 reserved word, write
+36 (
+36 ID, name = a
+36 [
+36 ID, name = i
+36 ]
+36 )
+36 ;
+37 ID, name = i
+37 :=
+37 ID, name = i
+37 +
+37 INTC, val = 1
+38 reserved word, endwh
+39 reserved word, end
+39 .
+DoToken Over!

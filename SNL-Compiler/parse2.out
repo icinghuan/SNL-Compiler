@@ -1,0 +1,111 @@
+ProcK
+	PheadK  bubble
+	VarK
+		DecK  IntegerK  i  j  num
+		DecK  ArrayK  1  20  IntegerK  a
+	ProcDecK  q
+		DecK  Value param:IntegerK  num
+		VarK
+			DecK  IntegerK  i  j  k
+			DecK  IntegerK  t
+		StmLK
+			StmtK  Assign
+				ExpK  Vari  Id  i
+				ExpK  Const  1
+			StmtK  While
+				ExpK  Op  <
+					ExpK  Vari  Id  i
+					ExpK  Vari  Id  num
+				StmtK  Assign
+					ExpK  Vari  Id  j
+					ExpK  Op  +
+						ExpK  Op  -
+							ExpK  Vari  Id  num
+							ExpK  Vari  Id  i
+						ExpK  Const  1
+				StmtK  Assign
+					ExpK  Vari  Id  k
+					ExpK  Const  1
+				StmtK  While
+					ExpK  Op  <
+						ExpK  Vari  Id  k
+						ExpK  Vari  Id  j
+					StmtK  If
+						ExpK  Op  <
+							ExpK  Vari  ArrayMember  a
+								ExpK  Op  +
+									ExpK  Vari  Id  k
+									ExpK  Const  1
+							ExpK  Vari  ArrayMember  a
+								ExpK  Vari  Id  k
+						StmtK  Assign
+							ExpK  Vari  Id  t
+							ExpK  Vari  ArrayMember  a
+								ExpK  Vari  Id  k
+						StmtK  Assign
+							ExpK  Vari  ArrayMember  a
+								ExpK  Vari  Id  k
+							ExpK  Vari  ArrayMember  a
+								ExpK  Op  +
+									ExpK  Vari  Id  k
+									ExpK  Const  1
+						StmtK  Assign
+							ExpK  Vari  ArrayMember  a
+								ExpK  Op  +
+									ExpK  Vari  Id  k
+									ExpK  Const  1
+							ExpK  Vari  Id  t
+						StmtK  Assign
+							ExpK  Vari  Id  temp
+							ExpK  Const  0
+					StmtK  Assign
+						ExpK  Vari  Id  k
+						ExpK  Op  +
+							ExpK  Vari  Id  k
+							ExpK  Const  1
+				StmtK  Assign
+					ExpK  Vari  Id  i
+					ExpK  Op  +
+						ExpK  Vari  Id  i
+						ExpK  Const  1
+	StmLK
+		StmtK  Read  num
+		StmtK  Assign
+			ExpK  Vari  Id  i
+			ExpK  Const  1
+		StmtK  While
+			ExpK  Op  <
+				ExpK  Vari  Id  i
+				ExpK  Op  +
+					ExpK  Vari  Id  num
+					ExpK  Const  1
+			StmtK  Read  j
+			StmtK  Assign
+				ExpK  Vari  ArrayMember  a
+					ExpK  Vari  Id  i
+				ExpK  Vari  Id  j
+			StmtK  Assign
+				ExpK  Vari  Id  i
+				ExpK  Op  +
+					ExpK  Vari  Id  i
+					ExpK  Const  1
+		StmtK  Call
+			ExpK  Vari  Id  q
+			ExpK  Vari  Id  num
+		StmtK  Assign
+			ExpK  Vari  Id  i
+			ExpK  Const  1
+		StmtK  While
+			ExpK  Op  <
+				ExpK  Vari  Id  i
+				ExpK  Op  +
+					ExpK  Vari  Id  num
+					ExpK  Const  1
+			StmtK  Write
+				ExpK  Vari  ArrayMember  a
+					ExpK  Vari  Id  i
+			StmtK  Assign
+				ExpK  Vari  Id  i
+				ExpK  Op  +
+					ExpK  Vari  Id  i
+					ExpK  Const  1
